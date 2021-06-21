@@ -1,6 +1,6 @@
 .banner{
     background-color:#eca50b ;
-    background: url(/img/index1.jpg);
+    background-image: url(../img/index1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -122,9 +122,9 @@
     
         .product{
         width: 31.5%;
-            .img1{background:url(/img/index6a.jpg);}
-            .img2{background:url(/img/index7a.jpg);}
-            .img3{background:url(/img/index8a.jpg);}
+            .img1{background:url(../img/index6a.jpg);}
+            .img2{background:url(../img/index7a.jpg);}
+            .img3{background:url(../img/index8a.jpg);}
     
             .img-box{
                 background-size: cover;
