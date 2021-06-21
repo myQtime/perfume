@@ -1,0 +1,49 @@
+@mixin textHidden{
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@mixin screen992 {
+    @media (max-width:992px){
+        @content;
+    }
+    
+}
+
+@mixin pad{
+    @media (max-width: 768px){
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width:576px){        
+        @content;
+    } 
+}
+
+@mixin font($fontsize,$fontweight){
+    font-size: $fontsize;
+    font-weight: $fontweight;
+}
+
+@mixin rwd-font($fontsize,$fontweight){
+    font-size: $fontsize;
+    font-weight: $fontweight;
+    @include screen992{
+        font-size: $fontsize*0.9;
+    }
+    @include pad{
+        font-size: $fontsize*0.75;
+    }
+}
+
+
+@mixin pill-btn($btncolor) {
+    display: block;
+    border: 2px solid $btncolor;
+    border-radius: 50px;
+    text-align: center;
+    color: $btncolor; 
+}

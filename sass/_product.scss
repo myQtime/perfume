@@ -1,0 +1,60 @@
+.product-wall{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    li{
+        width: 23%;
+        @include pad{
+            width: 32%;
+        }
+
+        @include mobile{
+            width: 49%;
+        }
+
+        margin-bottom: 60px;
+        @include mobile{
+            margin-bottom: 30px;
+        }
+        
+        h4{
+            @include font(24px,600);
+        }
+        p{
+            @include font(16px,300);
+        }
+        span{
+            @include font(16px,300);
+            text-decoration: line-through;
+            padding-left: 8px;
+            color: #8D8D8D;
+        }
+        a{
+            display: inline-block;
+            color: #916019;
+            margin-right: 4px;
+            .fa-heart:hover{
+                color: rgb(233, 54, 84);
+            }
+            .fa-shopping-cart:hover{
+                color: darken($color: #916019, $amount: 15);
+            }
+        }
+    }
+}
+
+.page{
+    justify-content: center;
+    a{
+        display: block;
+        margin: 10px;
+        @include font(20px,400);
+        color: #000;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    .page-now{
+        color: #AC8A46;
+        text-decoration: underline;
+    }
+}
